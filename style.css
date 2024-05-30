@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: #282828;
+  height: 100%;
+  background-image: linear-gradient(
+    to bottom right,
+    #471ffa 0%,
+    #8a70df 40%,
+    #1a2fe7 60%,
+    #ff0054 100%
+  );
+  background-size: 200%, 200%;
+  animation: float 6s linear infinite alternate;
+}
+
+@keyframes float {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 100%;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #471ffa;
+  border-radius: 50px;
+}
+
+.container {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.25
+  ); /* Cor de fundo com transparência */
+  backdrop-filter: blur(10px); /*efeito desfoque */
+  border-radius: 10px;
+  height: 80%;
+  max-width: 470px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*align-items: normal;*/
+
+  padding: 10px;
+  color: #fff;
+  border-radius: 10%;
+}
+/*.section.botoes-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex; 
+  
+}
+*/
+
+
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+p {
+  color: #000000;
+}
+
+.degrade {
+  background: linear-gradient(to right, #471ffa, #ff0054);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 1rem;
+}
+
+/* ESTILO HEADER*/
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header img {
+  max-width: 40%;
+  border-radius: 50%;
+  border: 5px solid;
+}
+
+header h1 {
+  color: #000000;
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+/*Estilo dos Botões*/
+
+section.botoes-links {
+  display: flex;
+  flex-direction: column;
+  align-items:center; /* Centraliza os botões horizontalmente */
+  gap: 1rem;
+  /*min-width: 300px;
+  max-width: 400px;*/
+}
+
+a.link button {
+  width: 350px;
+  max-width: 400px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.2em;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.2s;
+}
+
+a.link i {
+  font-size: 1.5em;
+}
+a.link button:hover,
+footer a.btn-footer:hover {
+  transform: scale(1.05);
+}
+
+/* Estilo Footer*/
+footer {
+  text-align: center;
+  margin: 30px;
+}
+
+footer a.btn-footer {
+  font-size: 1.5em;
+  width: 55px;
+  height: 55px;
+  display: inline-block;
+  line-height: 55px;
+  border-radius: 50%;
+  margin: 0 5px;
+  color: #ffffff;
+  transition: 0.2s;
+}
+
+.desenv {
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 10px;
+  color: #000000;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+  .container {
+    max-width: 95%;
+    margin: 3% auto;
+  }
+}
+
+/* Responsividade */
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 80%;
+    margin: 5% auto;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+  .container {
+    max-width: 95%;
+    margin: 3% auto;
+  }
+}
+
+@media (max-width: 480px) {
+  header img {
+    max-width: 60%;
+  }
+  }
+
